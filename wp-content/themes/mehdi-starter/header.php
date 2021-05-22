@@ -15,7 +15,7 @@
 
 </head>
 
-<body class="stretched no-transition">
+<body <?php body_class( 'stretched no-transition' ); ?>>
 
   <!-- Document Wrapper
   ============================================= -->
@@ -89,7 +89,7 @@
         <!-- Logo
         ============================================= -->
         <div id="logo">
-          <a href="#" class="standard-logo">Udemy</a>
+          <a href="#" class="standard-logo">Mehdi Starter</a>
         </div><!-- #logo end -->
 
         <div class="top-advert">

@@ -21,3 +21,6 @@
 .category-1 #page-title h1{
     color: yellow;
 }
+
+/* CSS WIDGETS */
+#wp-calendar{ width: 100%; }
