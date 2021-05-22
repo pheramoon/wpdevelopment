@@ -40,16 +40,16 @@
       </div><!-- #copyrights end -->
 
     </footer><!-- #footer end -->
-  </div><!-- #wrapper end -->
+    </div><!-- #wrapper end -->
 
-  <!-- Go To Top
+    <!-- Go To Top
   ============================================= -->
-  <div id="gotoTop" class="icon-angle-up"></div>
+    <div id="gotoTop" class="icon-angle-up"></div>
 
-  <!-- External JavaScripts
+    <!-- External JavaScripts
   ============================================= -->
-  <?php wp_footer(); ?>
+    <?php wp_footer(); ?>
 
-</body>
+    </body>
 
-</html>
+    </html>

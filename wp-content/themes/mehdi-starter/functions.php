@@ -1,14 +1,11 @@
 <?php
 
-
-
 // Setup
 
 // Includes
 include( get_theme_file_path( '/includes/front/enqueue.php' ) );
 include( get_theme_file_path( '/includes/setup.php' ) );
 include( get_theme_file_path( '/includes/widgets.php' ) );
-
 
 // Hooks
 
