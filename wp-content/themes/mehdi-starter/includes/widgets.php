@@ -7,7 +7,7 @@ function ju_widgets() {
         'description'   =>  __('Sidebar for mehdi theme', 'mehdi-starter'),
         'before_widget' =>  '<div id="%1$s" class="widget cleafix %2$s">',
         'after_widget'  =>  '</div>',
-        'before_title'   =>  '<h4>',
+        'before_title'   => '<h4>',
         'after_title'   =>  '</h4>'
     ]);
 }

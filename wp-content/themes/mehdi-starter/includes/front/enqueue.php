@@ -22,8 +22,8 @@ function ju_enqueue(){
     wp_enqueue_style( 'ju_responsive' );
     wp_enqueue_style( 'ju_custom' );
 
-    wp_register_script( 'ju_plugins', $uri . 'assests/js/plugins.js', [], false, true  );
-    wp_register_script( 'ju_functions', $uri . 'assests/js/functions.js', [], false, true  );
+    wp_register_script( 'ju_plugins', $uri . '/assets/js/plugins.js', [], false, true  );
+    wp_register_script( 'ju_functions', $uri . '/assets/js/functions.js', [], false, true  );
 
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'ju_plugins' );
