@@ -17,6 +17,6 @@ function r_activate_plugin(){
     ) ENGINE=InnoDB " . $wpdb->get_charset_collate() . ";";
 
 
-    require( ABSPATH . "/wp-admin/includes/upgrade.php" );
+    require_once( ABSPATH . "/wp-admin/includes/upgrade.php" );
     dbDelta( $createSQL );
 }
