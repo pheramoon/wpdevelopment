@@ -6,6 +6,9 @@ function r_activate_plugin(){
         wp_die( __( "You must update WordPress to use this plugin.", 'recipe' ) );
     }
 
+    recipe_init();
+    flush_rewrite_rules();
+
     global $wpdb;
     $createSQL      =   "
     CREATE TABLE `" . $wpdb->prefix . "recipe_ratings` (
