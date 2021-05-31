@@ -31,6 +31,11 @@ include( 'includes/cron.php' );
 include( 'includes/utility.php' );
 include( 'includes/shortcodes/creator.php' );
 include( 'process/submit-user-recipe.php' );
+include( 'includes/shortcodes/auth-form.php' );
+include( 'process/create-account.php' );
+include( 'process/login.php' );
+include( 'includes/front/logout-link.php' );
+
 
 // Hooks
 register_activation_hook( __FILE__, 'r_activate_plugin' );
@@ -45,7 +50,12 @@ add_action( 'admin_init', 'recipe_admin_init' );
 add_action( 'widgets_init', 'r_widgets_init' );
 add_action( 'r_daily_recipe_hook', 'r_daily_generate_recipe' );
 add_action( 'wp_ajax_r_submit_user_recipe', 'r_submit_user_recipe');
-add_action( 'wp_ajax_nopriv_r_submit_user_recipe', 'r_submit_user_recipe');
+add_action( 'wp_ajax_nopriv_r_submit_user_recipe', 'r_submit_user_recipe' );
+add_action( 'wp_ajax_nopriv_recipe_create_account', 'recipe_create_account' );
+add_action( 'wp_ajax_nopriv_recipe_user_login', 'recipe_user_login' );
+add_filter( 'wp_nav_menu_secondary_items', 'ju_new_nav_menu_items', 999 );
+
 
 // Shortcodes
 add_shortcode( 'recipe_creator', 'r_recipe_creator_shortcode' );
+add_shortcode( 'recipe_auth_form', 'r_recipe_auth_form_shortcode' );
